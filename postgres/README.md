@@ -1,3 +1,5 @@
+### PostgreSQL
+
 1. Run postgres image
 ```
 docker run --name postgresql -p 5432:5432 -e POSTGRES_PASSWORD=secret -d postgres:14.2
