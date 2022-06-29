@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  node:
+    image: node-web-app
+    ports:
+      - 8080:8080
+
+  postgres:
+    image: postgres:14.2
+    environment:
+      - POSTGRES_PASSWORD=secret
+      - POSTGRES_DATABASE=api
+    volumes:
+      - ${PWD}/postgres-data:/var/lib/postgresql/data 
+    ports:
+      - 5432:5432

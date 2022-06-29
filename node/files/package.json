@@ -1,0 +1,14 @@
+{
+    "name": "simple_node_app",
+    "version": "1.0.0",
+    "description": "Node.js on Docker",
+    "author": "Manuel Camejo <mcamejo@fi.uba.ar>",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "dependencies": {
+        "express": "^4.16.1",
+        "pg": "^8.7.3"
+    }
+}
